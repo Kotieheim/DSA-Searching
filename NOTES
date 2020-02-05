@@ -1,0 +1,30 @@
+Key terms
+
+ - Linear search
+    - searching through the index 1 by 1, if you reach the end of the loop without finding the item you return -1 (or some indicator) indicating that the item wasn't found
+    - at best 0(1) if item at start of array
+    - at worst 0(n) as you have to individually search the entire array to find that a key doesn't exist.
+    - same for average case, 0(n)
+
+ - Binary search
+    - a faster search method than Linear, it only works on sorted arrays.
+    - dividing the range in half each time, this technique is known as a 'Divide and Conquer' approach
+
+    - best case: 0(1) - the item was in the middle of the array.
+    - worst and average case - O(log(n)) by cutting search in half for each iteration.
+    
+ - Depth-first search (DFS)
+    - Start at a given node, traverse as for down as you can. when you reach a node which has no children to visit or all nodes on its path have been visited, you start backtracking.
+
+
+
+
+ - in-order search
+    - left branch is visited, then node iteslf, then right
+ - Pre-ordering
+    - node is handled before the branches
+ - Post-ordering   
+    - node is handled after the branches
+
+ - Breadth-first search (BFS)
+    - workds across the rows of a tree. Top row will be handled 1st, then 2nd row and so on. handled with FIFO(first in first out) queue so you can store all the siblings in the queue and process them in the correct order.
